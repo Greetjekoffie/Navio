@@ -2,34 +2,33 @@ import { useGLTF } from '@react-three/drei'
 
 // @ts-ignore
 export function Model(props) {
-        const modelUrl = "https://cdn.jsdelivr.net/gh/Greetjekoffie/Navio@main/public/14_10_2025.glb";
-        console.log(modelUrl)
+        const modelUrl = "https://pub-41a07f1dc5dc4cca8eac07cf2da66117.r2.dev/14_10_2025.glb"
         // @ts-ignore
-        const { nodes } = useGLTF(modelUrl) as any;
-    return (
-        <group {...props} dispose={null}>
-            <mesh geometry={nodes.mesh_0.geometry} material={nodes.mesh_0.material} />
-            <mesh geometry={nodes.mesh_1.geometry} material={nodes.mesh_1.material} />
-            <mesh geometry={nodes.mesh_2.geometry} material={nodes.mesh_2.material} />
-            <mesh geometry={nodes.mesh_3.geometry} material={nodes.mesh_3.material} />
-            <mesh geometry={nodes.mesh_4.geometry} material={nodes.mesh_4.material} />
-            <mesh geometry={nodes.mesh_5.geometry} material={nodes.mesh_5.material} />
-            <mesh geometry={nodes.mesh_6.geometry} material={nodes.mesh_6.material} />
-            <mesh geometry={nodes.mesh_7.geometry} material={nodes.mesh_7.material} />
-            <mesh geometry={nodes.mesh_8.geometry} material={nodes.mesh_8.material} />
-            <mesh geometry={nodes.mesh_9.geometry} material={nodes.mesh_9.material} />
-            <mesh geometry={nodes.mesh_10.geometry} material={nodes.mesh_10.material} />
-            <mesh geometry={nodes.mesh_11.geometry} material={nodes.mesh_11.material} />
-            <mesh geometry={nodes.mesh_12.geometry} material={nodes.mesh_12.material} />
-            <mesh geometry={nodes.mesh_13.geometry} material={nodes.mesh_13.material} />
-            <mesh geometry={nodes.mesh_14.geometry} material={nodes.mesh_14.material} />
-            <mesh geometry={nodes.mesh_15.geometry} material={nodes.mesh_15.material} />
-            <mesh geometry={nodes.mesh_16.geometry} material={nodes.mesh_16.material} />
-            <mesh geometry={nodes.mesh_17.geometry} material={nodes.mesh_17.material} />
-            <mesh geometry={nodes.mesh_18.geometry} material={nodes.mesh_18.material} />
-            <mesh geometry={nodes.mesh_19.geometry} material={nodes.mesh_19.material} />
-        </group>
-    )
-}
+        const { nodes } = useGLTF(modelUrl) as any
 
-useGLTF.preload(`${import.meta.env.BASE_URL}14_10_2025.glb`)
+        return (
+            <group {...props} dispose={null}>
+                    <mesh geometry={nodes.Mesh_0.geometry} material={nodes.Mesh_0.material} />
+                    <mesh geometry={nodes.Mesh_1.geometry} material={nodes.Mesh_1.material} />
+                    <mesh geometry={nodes.Mesh_2.geometry} material={nodes.Mesh_2.material} />
+                    <mesh geometry={nodes.Mesh_3.geometry} material={nodes.Mesh_3.material} />
+                    <mesh geometry={nodes.Mesh_4.geometry} material={nodes.Mesh_4.material} />
+                    <mesh geometry={nodes.Mesh_5.geometry} material={nodes.Mesh_5.material} />
+                    <mesh geometry={nodes.Mesh_6.geometry} material={nodes.Mesh_6.material} />
+                    <mesh geometry={nodes.Mesh_7.geometry} material={nodes.Mesh_7.material} />
+                    <mesh geometry={nodes.Mesh_8.geometry} material={nodes.Mesh_8.material} />
+                    <mesh geometry={nodes.Mesh_9.geometry} material={nodes.Mesh_9.material} />
+                    <mesh geometry={nodes.Mesh_10.geometry} material={nodes.Mesh_10.material} />
+                    <mesh geometry={nodes.Mesh_11.geometry} material={nodes.Mesh_11.material} />
+                    <mesh geometry={nodes.Mesh_12.geometry} material={nodes.Mesh_12.material} />
+                    <mesh geometry={nodes.Mesh_13.geometry} material={nodes.Mesh_13.material} />
+                    <mesh geometry={nodes.Mesh_14.geometry} material={nodes.Mesh_14.material} />
+                    <mesh geometry={nodes.Mesh_15.geometry} material={nodes.Mesh_15.material} />
+                    <mesh geometry={nodes.Mesh_16.geometry} material={nodes.Mesh_16.material} />
+                    <mesh geometry={nodes.Mesh_17.geometry} material={nodes.Mesh_17.material} />
+                    <mesh geometry={nodes.Mesh_18.geometry} material={nodes.Mesh_18.material} />
+                    <mesh geometry={nodes.Mesh_19.geometry} material={nodes.Mesh_19.material} />
+                    <mesh geometry={nodes.Ball1.geometry} material={nodes.Ball1.material} />
+            </group>
+        )
+}
