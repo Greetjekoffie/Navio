@@ -1,8 +1,9 @@
 import { useGLTF } from '@react-three/drei'
 
-// @ts-ignore
 export function Model(props) {
         const modelUrl = "https://github.com/Greetjekoffie/Navio/releases/download/test/14_10_2025.glb";
+        console.log(modelUrl)
+        // @ts-ignore
         const { nodes } = useGLTF(modelUrl) as any;
     return (
         <group {...props} dispose={null}>
