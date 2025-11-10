@@ -2,7 +2,8 @@ import { useGLTF } from '@react-three/drei'
 
 // @ts-ignore
 export function Model(props) {
-    const { nodes} = useGLTF(`${import.meta.env.BASE_URL}14_10_2025.glb`) as any
+        const modelUrl = "https://github.com/Greetjekoffie/Navio/releases/download/test/14_10_2025.glb";
+        const { nodes } = useGLTF(modelUrl) as any;
     return (
         <group {...props} dispose={null}>
             <mesh geometry={nodes.mesh_0.geometry} material={nodes.mesh_0.material} />
